@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register as a Worker | LocalHire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" style="background-color: #FFD700; color: #333;">
+    <div class="logo" style="font-weight: bold;">LocalHire</div>
+    <nav>
+      <a href="/" style="color: #333;">Home</a>
+      <a href="/register" style="color: #333;">Register</a>
+      <a href="/workers?service=plumber" style="color: #333;">Find Workers</a>
+    </nav>
+  </header>
+
+  <!-- Register Form -->
+  <main class="container" style="padding: 2rem;">
+    <h1 class="page-title" style="color: #333;">Register as a Local Worker</h1>
+    <p class="page-subtitle" style="color: #555;">Fill in your details to join our worker network.</p>
+
+    <div class="form-card" style="background-color: #fff8dc; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <!-- ✅ Photo input removed -->
+      <form action="/register" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" placeholder="e.g. Ramesh Sharma" required>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Type of Service</label>
+          <select name="service" id="service" required>
+            <option value="">Select Service</option>
+            <option value="plumber">Plumber</option>
+            <option value="electrician">Electrician</option>
+            <option value="puncture">Puncture Repair</option>
+            <option value="cleaner">Cleaner</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" placeholder="e.g. 9876543210" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Your Location</label>
+          <input type="text" name="location" id="location" placeholder="e.g. Indore, Bhopal" required>
+        </div>
+
+        <button type="submit" class="btn-primary" style="background-color: #ffc107; color: #333; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">
+          Submit Registration
+        </button>
+      </form>
+    </div>
+
+    <a href="/" class="back-link" style="display: inline-block; margin-top: 1rem; color: #333;">← Back to Home</a>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-about">
+      <p>LocalHire is a platform that connects skilled workers with local people in need of help. Whether it's plumbing, electrical work, or general labor, we make it easy and fast to find trusted help nearby.</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.facebook.com/share/1BYDS6JYHE/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=r4kw5wm" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/divyesh-pal-1b079b296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="footer-contact">
+      <p>Created by <strong>Divyesh Pal</strong></p>
+      <p>📞 +91-9755707518</p>
+      <p>✉️ dpaldivyesh99@gmail.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>

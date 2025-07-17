@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login | LocalHire</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- ✅ Yellow Navbar -->
+  <header class="navbar">
+    <div class="logo">LocalHire</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/register">Register</a>
+      <a href="/workers">Find Workers</a>
+    </nav>
+  </header>
+
+  <!-- ✅ Login Form -->
+  <main class="form-container">
+    <div class="form-wrapper">
+      <h2>Login to LocalHire</h2>
+      <p>Access your account to hire or work</p>
+
+      <form action="/login" method="POST">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Your email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Your password" required>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p>Don't have an account? <a href="/signup">Signup</a></p>
+      <p><a href="/">← Back to Home</a></p>
+    </div>
+  </main>
+</body>
+</html>

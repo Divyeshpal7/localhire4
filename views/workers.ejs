@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find Workers | LocalHire</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">LocalHire</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/register">Register</a>
+      <a href="/workers">Find Workers</a>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <div class="container">
+    <h1 class="page-title">Available Workers</h1>
+    <p class="page-subtitle">Browse and filter local skilled workers near you.</p>
+
+    <!-- Filter Form -->
+    <form class="filter-form" action="/workers" method="GET">
+      <select name="service">
+        <option value="">All Services</option>
+        <option value="plumber">Plumber</option>
+        <option value="electrician">Electrician</option>
+        <option value="puncture">Puncture Repair</option>
+        <option value="cleaner">Cleaner</option>
+        <option value="cleaner">Others</option>
+      </select>
+      <button type="submit">Filter</button>
+    </form>
+
+    <!-- Worker Cards -->
+    <% if (workers.length === 0) { %>
+      <div class="no-results">
+        <p>🚫 No workers found.</p>
+      </div>
+    <% } else { %>
+      <div class="profile-grid">
+        <% workers.forEach(worker => { %>
+          <div class="card">
+            
+            <h3><%= worker.name %></h3>
+            <p><strong>Service:</strong> <%= worker.service %></p>
+            <p><strong>📍 Location:</strong> <%= worker.location %></p>
+            <p><strong>📞 Phone:</strong> <%= worker.phone %></p>
+            <a href="tel:<%= worker.phone %>" class="btn-call">Call Now</a>
+          </div>
+        <% }) %>
+      </div>
+    <% } %>
+
+    <a href="/" class="back-link">← Back to Home</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-about">
+    <p>LocalHire is a platform that connects skilled workers with local people in need of help. Whether it's plumbing, electrical work, or general labor, we make it easy and fast to find trusted help nearby.</p>
+  </div>
+
+  <div class="footer-social">
+    <a href="https://www.facebook.com/share/1BYDS6JYHE/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=r4kw5wm" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/divyesh-pal-1b079b296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+  </div>
+
+  <div class="footer-contact">
+    <p>Created by <strong>Divyesh Pal</strong></p>
+    <p>📞 +91-9755707518</p>
+    <p>✉️ dpaldivyesh99@gmail.com</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

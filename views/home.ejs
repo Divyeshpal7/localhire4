@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalHire | Home</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">LocalHire</div>
+    <nav>
+  <a href="/">Home</a>
+  <a href="/register">Register</a>
+  <a href="/workers?service=plumber">Find</a>
+  
+  <% if (user) { %>
+    <span class="welcome-user">Welcome, <%= user.name %></span>
+    <a href="/logout">Logout</a>
+  <% } else { %>
+    <a href="/login">Login</a>
+    <a href="/signup">Signup</a>
+  <% } %>
+</nav>
+
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Need Help Near You?</h1>
+        <p>Find plumbers, electricians, cleaners, and more — fast and reliable local workers.</p>
+        <a href="/workers?service=plumber" class="hero-btn">Find Workers</a>
+      </div>
+      <div class="hero-photo">
+        <img src="/images/hero-worker.jpg" alt="Worker" id="heroImage">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About LocalHire</h2>
+    <p>LocalHire is a user-friendly and trustworthy platform designed to help you find skilled workers from your local area for all your technical and daily household needs. Whether you're dealing with an unexpected emergency like a burst pipe or just need routine maintenance such as AC servicing or electrical repairs, LocalHire ensures that help is just a few clicks away. We carefully connect you with verified professionals—plumbers, electricians, carpenters, cleaners, and more—who are available nearby and ready to assist you quickly and reliably. With LocalHire, you no longer have to waste time searching or negotiating; we make hiring local help simple, safe, and efficient.</p>
+  </section>
+
+  <!-- Featured Workers -->
+  <section class="profiles">
+    <h2>Featured Workers</h2>
+    <div class="two-column">
+      <div class="card">
+        <h3>Ramesh Sharma</h3>
+        <p>Service: <strong>Plumber</strong></p>
+        <p>📍 Location: Indore</p>
+        <p>📞 Phone: 99991245</p>
+        <div class="card-photo">
+          <img src="images/ravi.jpg" alt="Ravi Sharma">
+        </div>
+      </div>
+      <div class="card">
+        <h3>Sunita Verma</h3>
+        <p>Service: <strong>Electrician</strong></p>
+        <p>📍 Location: Bhopal</p>
+        <p>📞 Phone: 9876543210</p>
+        <div class="card-photo">
+          <img src="images/sunita.jpg" alt="Sunita Verma">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Important Note -->
+  <section class="important-note" style="background: #fff3cd; color: #856404; padding: 20px; text-align: center; font-weight: 500; border-top: 2px solid #ffeeba; border-bottom: 2px solid #ffeeba;">
+    <p><strong>Important:</strong> If you hire a worker through LocalHire, you are required to pay a minimum service fee of ₹100 if the worker arrives at your location, regardless of whether the task is completed.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-about">
+      <p>LocalHire is a platform that connects skilled workers with local people in need of help. Whether it's plumbing, electrical work, or general labor, we make it easy and fast to find trusted help nearby.</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.facebook.com/share/1BYDS6JYHE/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=r4kw5wm" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/divyesh-pal-1b079b296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="footer-contact">
+      <p>Created by <strong>Divyesh Pal</strong></p>
+      <p>📞 +91-9755707518</p>
+      <p>✉️ dpaldivyesh99@gmail.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>

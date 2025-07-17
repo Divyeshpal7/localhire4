@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup | LocalHire</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- ✅ Yellow Navbar -->
+  <header class="navbar">
+    <div class="logo">LocalHire</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/register">Register</a>
+      <a href="/workers">Find Workers</a>
+    </nav>
+  </header>
+
+  <!-- ✅ Signup Form -->
+  <main class="form-container">
+    <div class="form-wrapper">
+      <h2>Signup for LocalHire</h2>
+      <p>Create your account to get started</p>
+
+      <form action="/signup" method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="e.g. Ramesh Sharma" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Your email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Create a password" required>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p>Already have an account? <a href="/login">Login</a></p>
+      <p><a href="/">← Back to Home</a></p>
+    </div>
+  </main>
+</body>
+</html>
