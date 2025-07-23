@@ -347,4 +347,65 @@ footer .footer-about {
   display: inline-block;
 }
 
+/* Featured Workers Section */
+.profiles {
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Worker Card Container */
+.worker-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff8e1;
+  border: 1px solid #ffe082;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.worker-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Left Text Area */
+.worker-left {
+  text-align: left;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.worker-left h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.worker-left p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Worker Image */
+.worker-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffeb3b;
+  background: #fff;
+}
 
