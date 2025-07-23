@@ -10,19 +10,17 @@
   <header class="navbar">
     <div class="logo">LocalHire</div>
     <nav>
-  <a href="/">Home</a>
-  <a href="/register">Register</a>
-  <a href="/workers?service=plumber">Find</a>
-  
-  <% if (user) { %>
-    <span class="welcome-user">Welcome, <%= user.name %></span>
-    <a href="/logout">Logout</a>
-  <% } else { %>
-    <a href="/login">Login</a>
-    <a href="/signup">Signup</a>
-  <% } %>
-</nav>
-
+      <a href="/">Home</a>
+      <a href="/register">Register</a>
+      <a href="/workers?service=plumber">Find</a>
+      <% if (user) { %>
+        <span class="welcome-user">Welcome, <%= user.name %></span>
+        <a href="/logout">Logout</a>
+      <% } else { %>
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+      <% } %>
+    </nav>
   </header>
 
   <!-- Hero Section -->
@@ -47,25 +45,29 @@
 
   <!-- Featured Workers -->
   <section class="profiles">
-    <h2>Featured Workers</h2>
-    <div class="two-column">
-      <div class="card">
+    <h2 class="section-title">Featured Workers</h2>
+
+    <div class="worker-card">
+      <div class="worker-left">
         <h3>Ramesh Sharma</h3>
         <p>Service: <strong>Plumber</strong></p>
         <p>📍 Location: Indore</p>
         <p>📞 Phone: 99991245</p>
-        <div class="card-photo">
-          <img src="images/ravi.jpg" alt="Ravi Sharma">
-        </div>
       </div>
-      <div class="card">
+      <div class="worker-image">
+        <img src="images/ravi.jpg" alt="Ramesh Sharma">
+      </div>
+    </div>
+
+    <div class="worker-card">
+      <div class="worker-left">
         <h3>Sunita Verma</h3>
         <p>Service: <strong>Electrician</strong></p>
         <p>📍 Location: Bhopal</p>
         <p>📞 Phone: 9876543210</p>
-        <div class="card-photo">
-          <img src="images/sunita.jpg" alt="Sunita Verma">
-        </div>
+      </div>
+      <div class="worker-image">
+        <img src="images/sunita.jpg" alt="Sunita Verma">
       </div>
     </div>
   </section>
@@ -93,6 +95,5 @@
       <p>✉️ dpaldivyesh99@gmail.com</p>
     </div>
   </footer>
-
 </body>
 </html>
