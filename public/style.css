@@ -347,39 +347,4 @@ footer .footer-about {
   display: inline-block;
 }
 
-.worker-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff6d8;
-  padding: 20px;
-  margin: 15px auto;
-  border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-}
 
-.worker-left {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.worker-left h3 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.worker-left p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.worker-image img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 3px solid #007bff;
-  object-fit: cover;
-}
