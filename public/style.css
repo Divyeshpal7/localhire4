@@ -409,3 +409,82 @@ footer .footer-about {
   background: #fff;
 }
 
+/* === LocalHire Login Form Design Only === */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #fffde7; /* Light yellow background */
+}
+
+.form-wrapper {
+  background-color: #fff8e1; /* Soft yellow box */
+  border: 2px solid #ffeb3b;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.form-wrapper h2 {
+  font-size: 24px;
+  color: #f9a825;
+  margin-bottom: 10px;
+}
+
+.form-wrapper p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-wrapper label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-wrapper input {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ffe082;
+  background-color: #fff;
+}
+
+.form-wrapper button {
+  background-color: #fdd835;
+  color: #333;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-wrapper button:hover {
+  background-color: #fbc02d;
+}
+
+.form-wrapper a {
+  color: #f9a825;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.form-wrapper a:hover {
+  text-decoration: underline;
+}
