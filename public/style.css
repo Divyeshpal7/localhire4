@@ -488,3 +488,80 @@ footer .footer-about {
 .form-wrapper a:hover {
   text-decoration: underline;
 }
+
+/* === LocalHire Yellow Theme - Register Form Only === */
+.form-container {
+  background-color: #fffde7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.form-container h1 {
+  font-size: 28px;
+  color: #f9a825;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.form-wrapper {
+  background-color: #fff8dc;
+  border: 2px solid #ffecb3;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.form-wrapper .form-group {
+  margin-bottom: 20px;
+}
+
+.form-wrapper label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-wrapper input,
+.form-wrapper select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ffe082;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+.form-wrapper button {
+  background-color: #fdd835;
+  color: #333;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-wrapper button:hover {
+  background-color: #fbc02d;
+}
+
+.form-container .back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #f9a825;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.form-container .back-link:hover {
+  text-decoration: underline;
+}
